@@ -1,0 +1,123 @@
+\documentclass[10pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+%\usepackage[scale=0.93]{geometry}
+\usepackage[
+  scale  = 0.93,
+  top    = 1.0cm,
+  bottom = 0.50cm,
+  left   = 1.0cm,
+  right  = 1.0cm]{geometry}
+
+\setlength{\hintscolumnwidth}{2.0cm}
+
+\newcommand\myitem{\item[\textbullet] }
+
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{Adrien}
+\familyname{Conrath~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\address{9 rue Pierre Bizos}{92330 Sceaux, France}
+\mobile{+33(0)650.836.384} % TODO: change with american number
+\email{adrienconrath@gmail.com}
+
+\begin{document}
+\maketitle
+
+%----------------------------------------------------------------------------------
+%            Work experience
+%----------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\cventry{Feb 2013 - Aug 2013}{Software Engineer Intern}{Nvidia
+(USA)}{}{}{Develop \textbf{debugging and profiling} tool targeting Nvidia's next generation \textbf{Tegra 5} for graphic applications.\newline
+  - \underline{Main mission}: Work on cross-platform core messaging system, \textbf{C++, Networking, Asynchronous I/O};\newline
+  - Integrate \textbf{Android build system} to existing \textbf{CMake} environment;\newline % TODO: 'integrate'
+  - Design and implement \textbf{back-end for crash reporting solution} based on Google
+  Breakpad, \textbf{PostgreSQL, PHP, Perl}.
+}
+
+\cventry{Aug 2012 - Jan 2013}{System Administrator}{Epita (France)}{}{}{
+    Maintain teaching team's computer lab in operational condition. Network and
+    security management. Provide services for 300 students and 30 teaching
+    assistants including: git, mercurial, mailing-lists, Intranet.
+    \newline \underline{Main mission}: Develop distributed automated test engine for correcting students' projects.
+  }
+\cventry{Jan 2012 - Jan 2013}{Teaching Assistant}{}{Epita (France)}{}{
+  Member of the teaching team for first year engineering students.
+  Redacting and correcting practicals and exams, conducting practicals.
+  \textbf{C, C++, Java, PostgreSQL, Linux}.}
+\cventry{2011}{Software Engineer Intern}{Spheris Digital Ltd.}{Beijing (China)}{}{
+  Develop and administrate back-end platform for connected digital picture frames.\newline
+  - Picture and video processing. Resizing, Thumbnail Creation, Video Encoding.\newline
+  - Synchronization with external providers (Facebook, Picasa, Flickr, Skydrive, \ldots).
+}
+\cventry{2010}{Teaching Assistant}{}{Epita (France)}{}{Teaching assistant for a
+class of 40 students. \textbf{Ocaml, C\#}.}
+\cventry{2010}{Web Developer Intern}{Epita (France)}{}{}{Develop Intranet
+  website for students. Implement form generation and statistics tools in a team of 4
+developers.}
+
+%----------------------------------------------------------------------------------
+%            Education
+%----------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{Sept 2013}{Computer Engineering Degree}{Epita (France)}{Computer Engineering and Real-Time Embedded Systems}{}{%
+  \textbf{Algorithms}, \textbf{Software Design}, \textbf{Object Oriented
+  Design}, \textbf{Operating Systems}, \textbf{Databases}, \textbf{Compiler
+  Construction}, \textbf{TCP/IP}, Mathematics, Formal Language Theory, Kernel
+  Programming, Microprocessors, Parallel Programming, Linux module programming,
+Windows CE / RTX, Electronics, Control Engineering.}
+\cventry{2011}{Beijing}{Took Mandarin Chinese private lessons during 5 months internship}{}{}{}
+\cventry{2010}{International Semester}{Shanghai JiaoTong University}{Shanghai (China)}{\newline Semester abroad courses: Chinese, intro to Artificial Intelligence, Embedded Systems, Electronics and C++}{}
+
+%----------------------------------------------------------------------------------
+%            Languages and Technologies
+%----------------------------------------------------------------------------------
+
+\section{Languages and Technologies}
+\cvline{Languages}{\textbf{C}; \textbf{C++}; \textbf{Shell scripting}; \textbf{Perl}; \textbf{Java}; \textbf{PHP}; \textbf{SQL (PostgreSQL, MySQL)}; JavaScript; C\#; ASM; Caml.}
+\cvline{Technologies}{\textbf{Networking}, \textbf{Asynchronous I/O}, \textbf{Git}, \textbf{Perforce}, \textbf{CMake}, \LaTeX, Intel TBB.}
+\cvline{Systems}{\textbf{Android}, \textbf{Linux}, \textbf{Linux System Administration.}}
+
+%----------------------------------------------------------------------------------
+%            Main IT projects
+%----------------------------------------------------------------------------------
+
+\section{Programming projects}
+\cventry{2013}{Collaborative school project with Thales (France)}{
+  Develop an API that processes and shares data from sensors such as
+GPS, and Gyrometer on board computers. Display connected devices on OpenStreetMap maps}{}{}{}
+\cventry{2012}{Intel Acceler8 Contest}{Optimize and parallelize a reference algorithm}{}{}{}
+\cventry{2012}{Educational micro-kernel in C}{Bootloader in Assembly,
+  Interrupts Management, Paging, Context Switching and Scheduling Algorithm}{1 month}{}{}
+\cventry{2011}{POSIX Shell developed in C}{1 month. Team of 5. Highest rank}{}{}{}
+\cventry{2011}{Compiler developed in C++}{Compiler for the Tiger language,
+  front-end and back-end: Lexer, Parser, AST Construction, Binding, Type
+Checker, Instruction Selection, Liveness Analysis and Register Allocation}{}{}{}
+\cventry{2011}{Design and develop Virtual Machine and Assembler}{Team of 5. Highest rank}{}{}{}
+\cventry{2009}{Video game in Delphi}{Develop physics engine of a
+  video game based on the ``Worms'' concept, team of 4 people. Highest rank.
+\underline{Performed demonstration at The Paris Video Games Festival}}{}{}{}
+\cventry{Other}{``Reiventing the wheel''}{Implementation of \textbf{Make},
+\textbf{malloc}, \textbf{HTTP server}, \textbf{C standard IO library}, compliant with existing tools}{}{}{}
+
+%----------------------------------------------------------------------------------
+%            Languages
+%----------------------------------------------------------------------------------
+
+\section{Languages}
+\cvdoubleitem{French}{Native}{English}{Bilingual proficiency}
+\cvdoubleitem{Chinese}{Moderate}{Spanish}{School level}
+
+\end{document}
